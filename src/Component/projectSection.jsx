@@ -8,7 +8,7 @@ const projects = [
     title: "Trust Property Website",
     description:
       "A fully responsive trust property website built using Next.js and styled with Tailwind CSS, ensuring fast performance, clean design, and seamless user experience across all devices.",
-    Image: "/images/project1.jpg",
+    Image: "",
     link: "https://trust-property.vercel.app/",
   },
   {
