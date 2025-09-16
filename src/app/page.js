@@ -21,6 +21,7 @@ const page = () => {
       <WhatIDoSection />
       <SkillsSection />
       <ProjectSection />
+    
      <TestimonialsSection />
      <ResumeSection />
      <ServicesSection />

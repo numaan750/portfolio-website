@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import myimg from "@/assets/my img.png";
 
 const containerVariants = {
   hidden: {},
@@ -32,68 +33,79 @@ const fadeRight = {
 
 export default function AboutSection() {
   return (
-    <section
+    <section 
       id="about"
-      className="bg-gray-900 py-24 px-4 sm:px-6 lg:px-12 xl:px-20"
+      className="bg-gray-900 py-20 sm:py-24 px-5 sm:px-6 md:px-10 lg:px-12 xl:px-20"
     >
-      <motion.div
-        className="Mycontainer max-w-7xl mx-auto"
-        initial="hidden"
-        whileInView="show"
-        viewport={{ once: false, amount: 0.3 }}
-        variants={containerVariants}
-      >
-        {/* Header */}
-        <motion.div className="mb-14 text-left" variants={fadeLeft}>
-          <p className="text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">
-            About Me
-          </p>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-tight text-white">
-            Passionate Front-End Developer
-            <br className="hidden md:inline" />
-            Crafting Meaningful Web Experiences
-          </h2>
-        </motion.div>
-
-        {/* Content Row */}
-        <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-16">
-          {/* Image Section */}
-          <motion.div className="w-full lg:w-1/3" variants={fadeLeft}>
-            <div className="relative w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px]">
-              <Image
-                src="/photos/img4.jpeg"
-                alt="Profile Photo"
-                fill
-                style={{ objectFit: "cover", objectPosition: "top" }}
-              />
-              <div className="absolute top-4 right-4 bg-indigo-600 bg-opacity-90 text-white text-xs sm:text-sm px-3 sm:px-4 py-1.5 sm:py-2 rounded-xl shadow-md">
-                Available Remotely
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Text Content */}
+      {/* ✅ Mycontainer added here */}
+      <div className="Mycontainer">
+        <motion.div
+          className="max-w-7xl mx-auto"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.3 }}
+          variants={containerVariants}
+        >
+          {/* ✅ Header */}
           <motion.div
-            className="w-full lg:w-2/3 space-y-6"
-            variants={fadeRight}
+            className="mb-10 sm:mb-14 text-left"
+            variants={fadeLeft}
           >
-            <p className="text-gray-300 text-base sm:text-lg">
-              With a deep-rooted passion for design and technology, I specialize
-              in creating responsive, visually compelling interfaces that not
-              only engage users but also deliver seamless functionality.
+            <p className="text-xs sm:text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">
+              About Me
             </p>
-            <p className="text-gray-300 text-base sm:text-lg">
-              From wireframes to deployment, I bring a detail-driven approach to
-              front-end development, ensuring every project reflects both modern
-              aesthetics and optimal user experience.
-            </p>
-            <p className="text-gray-300 text-base sm:text-lg">
-              I stay continuously updated with evolving trends and technologies,
-              ensuring each website I build is fast, scalable, and future-ready.
-            </p>
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug sm:leading-tight text-white">
+              Passionate Front-End Developer
+              <br className="hidden md:inline" />
+              Crafting Meaningful Web Experiences
+            </h2>
           </motion.div>
-        </div>
-      </motion.div>
+
+          {/* ✅ Content Row */}
+          <div className="flex flex-col lg:flex-row items-start gap-8 sm:gap-10 lg:gap-16">
+            {/* ✅ Image Section */}
+            <motion.div
+              className="w-full lg:w-1/3"
+              variants={fadeLeft}
+            >
+              <div className="relative w-full h-[280px] sm:h-[320px] md:h-[380px] lg:h-[420px] xl:h-[460px] rounded-xl overflow-hidden shadow-lg">
+                <Image
+                  src={myimg}
+                  alt="Profile Photo"
+                  fill
+                  className="object-cover object-top"
+                  priority
+                />
+                {/* Tag */}
+                <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-indigo-600 bg-opacity-90 text-white text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded-lg shadow-md">
+                  Available Remotely
+                </div>
+              </div>
+            </motion.div>
+
+            {/* ✅ Text Content */}
+            <motion.div
+              className="w-full lg:w-2/3 space-y-5 sm:space-y-6 text-left"
+              variants={fadeRight}
+            >
+              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
+                With a deep-rooted passion for design and technology, I specialize
+                in creating responsive, visually compelling interfaces that not
+                only engage users but also deliver seamless functionality.
+              </p>
+              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
+                From wireframes to deployment, I bring a detail-driven approach to
+                front-end development, ensuring every project reflects both modern
+                aesthetics and optimal user experience.
+              </p>
+              <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
+                I stay continuously updated with evolving trends and technologies,
+                ensuring each website I build is fast, scalable, and future-ready.
+              </p>
+            </motion.div>
+          </div>
+        </motion.div>
+      </div>
     </section>
   );
 }
