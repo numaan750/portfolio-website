@@ -8,8 +8,8 @@ import React from 'react'
 import AboutSection from '@/Component/Aboutus';
 import WhatIDoSection from '@/Component/Whaticando';
 import SkillsSection from '@/Component/Skills';
-import ProjectSection from '@/Component/projectSection';
 import Navbar from '@/Component/Navbar';
+import ProjectSection from '@/Component/projectSection';
 
 
 const page = () => {
@@ -21,6 +21,7 @@ const page = () => {
       <WhatIDoSection />
       <SkillsSection />
       <ProjectSection />
+      
      <TestimonialsSection />
      <ResumeSection />
      <ServicesSection />

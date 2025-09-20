@@ -27,7 +27,7 @@ const HeroSection = () => {
   return (
     <main
       id="home"
-      className="relative w-full min-h-screen flex items-center overflow-hidden"
+      className="relative w-full  flex items-center overflow-hidden"
     >
       {/* ✅ Background Image */}
       <Image
