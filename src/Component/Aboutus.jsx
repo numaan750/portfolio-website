@@ -7,9 +7,7 @@ import myimg from "@/assets/my img.png";
 const containerVariants = {
   hidden: {},
   show: {
-    transition: {
-      staggerChildren: 0.15,
-    },
+    transition: { staggerChildren: 0.15 },
   },
 };
 
@@ -33,24 +31,21 @@ const fadeRight = {
 
 export default function AboutSection() {
   return (
-    <section 
+    <section
       id="about"
-      className="bg-gray-900 py-20 sm:py-24 px-5 sm:px-6 md:px-10 lg:px-12 xl:px-20"
+      className="relative bg-gray-900 py-20 sm:py-24"
     >
-      {/* ✅ Mycontainer added here */}
+      {/* ✅ Container */}
       <div className="Mycontainer">
         <motion.div
-          className="max-w-7xl mx-auto"
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.3 }}
           variants={containerVariants}
+          className="flex flex-col gap-12"
         >
           {/* ✅ Header */}
-          <motion.div
-            className="mb-10 sm:mb-14 text-left"
-            variants={fadeLeft}
-          >
+          <motion.div className="text-left" variants={fadeLeft}>
             <p className="text-xs sm:text-sm font-semibold text-indigo-400 uppercase tracking-wider mb-2">
               About Me
             </p>
@@ -62,8 +57,8 @@ export default function AboutSection() {
           </motion.div>
 
           {/* ✅ Content Row */}
-          <div className="flex flex-col lg:flex-row items-start gap-8 sm:gap-10 lg:gap-16">
-            {/* ✅ Image Section */}
+          <div className="flex flex-col lg:flex-row items-start gap-10 lg:gap-16">
+            {/* ✅ Left: Image */}
             <motion.div
               className="w-full lg:w-1/3"
               variants={fadeLeft}
@@ -73,17 +68,17 @@ export default function AboutSection() {
                   src={myimg}
                   alt="Profile Photo"
                   fill
-                  className="object-cover object-top"
                   priority
+                  className="object-cover object-top"
                 />
-                {/* Tag */}
-                <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-indigo-600 bg-opacity-90 text-white text-[10px] sm:text-xs md:text-sm px-2 sm:px-3 md:px-4 py-1 sm:py-1.5 md:py-2 rounded-lg shadow-md">
+                {/* ✅ Tag */}
+                <div className="absolute top-3 sm:top-4 left-3 sm:left-4 bg-indigo-600 bg-opacity-90 text-white text-[10px] sm:text-xs md:text-sm px-3 md:px-4 py-1.5 md:py-2 rounded-lg shadow-md">
                   Available Remotely
                 </div>
               </div>
             </motion.div>
 
-            {/* ✅ Text Content */}
+            {/* ✅ Right: Text Content */}
             <motion.div
               className="w-full lg:w-2/3 space-y-5 sm:space-y-6 text-left"
               variants={fadeRight}
@@ -93,11 +88,13 @@ export default function AboutSection() {
                 in creating responsive, visually compelling interfaces that not
                 only engage users but also deliver seamless functionality.
               </p>
+
               <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
                 From wireframes to deployment, I bring a detail-driven approach to
                 front-end development, ensuring every project reflects both modern
                 aesthetics and optimal user experience.
               </p>
+
               <p className="text-gray-300 text-sm sm:text-base md:text-lg leading-relaxed">
                 I stay continuously updated with evolving trends and technologies,
                 ensuring each website I build is fast, scalable, and future-ready.

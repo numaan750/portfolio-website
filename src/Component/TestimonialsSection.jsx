@@ -73,11 +73,11 @@ export default function TestimonialsSection() {
   };
 
   return (
-    <section className="bg-gray-900 text-white py-20 px-4 sm:px-6 lg:px-12">
+    <section className="bg-gray-900 text-white py-20 px-4 sm:px-6 lg:px-10">
       <div className="Mycontainer grid md:grid-cols-2 gap-16 items-center">
-        {/* Stats Section */}
+        {/* ===== Stats Section ===== */}
         <motion.div
-          className="grid grid-cols-2 sm:grid-cols-2 gap-8 text-center"
+          className="grid grid-cols-2 sm:grid-cols-2 gap-8 text-center md:text-left"
           variants={fadeLeft}
           initial="hidden"
           whileInView="show"
@@ -85,42 +85,44 @@ export default function TestimonialsSection() {
         >
           {stats.map((item, idx) => (
             <div key={idx}>
-              <h3 className="text-4xl font-extrabold">{item.number}</h3>
-              <p className="text-gray-400 mt-2 uppercase text-sm">
+              <h3 className="text-4xl sm:text-5xl font-extrabold text-teal-400">
+                {item.number}
+              </h3>
+              <p className="text-gray-400 mt-2 uppercase text-xs sm:text-sm tracking-wide">
                 {item.label}
               </p>
             </div>
           ))}
         </motion.div>
 
-        {/* Testimonials Section */}
+        {/* ===== Testimonials Section (Fully Transparent) ===== */}
         <motion.div
-          className="relative"
+          className="relative text-left sm:text-lg leading-relaxed"
           variants={fadeRight}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.3 }}
         >
-          <div className="transition-all duration-500 ease-in-out min-h-[200px] px-2 sm:px-4">
+          <div className="transition-all duration-500 ease-in-out min-h-[220px] px-2 sm:px-4">
             <div className="text-5xl text-teal-400 mb-4 leading-none">“</div>
-            <p className="text-lg sm:text-xl font-medium leading-relaxed">
+            <p className="text-base sm:text-lg font-medium text-gray-200">
               {testimonials[currentIndex].quote}
             </p>
-            <p className="mt-6 text-sm text-gray-400 border-l-2 border-gray-600 pl-4">
+            <p className="mt-6 text-sm text-gray-400 border-l-2 border-teal-500 pl-4">
               {testimonials[currentIndex].name}
             </p>
           </div>
 
-          {/* Navigation Arrows */}
+          {/* ===== Transparent Navigation Arrows ===== */}
           <button
             onClick={prevTestimonial}
-            className="absolute left-[-20px] top-1/2 transform -translate-y-1/2 bg-gray-800 hover:bg-gray-700 text-white p-2 sm:p-3 rounded-full transition"
+            className="absolute left-[-25px] top-1/2 transform -translate-y-1/2 text-white text-3xl sm:text-4xl opacity-80 hover:opacity-100 transition"
           >
             &#10094;
           </button>
           <button
             onClick={nextTestimonial}
-            className="absolute right-[-20px] top-1/2 transform -translate-y-1/2 bg-gray-800 hover:bg-gray-700 text-white p-2 sm:p-3 rounded-full transition"
+            className="absolute right-[-25px] top-1/2 transform -translate-y-1/2 text-white text-3xl sm:text-4xl opacity-80 hover:opacity-100 transition"
           >
             &#10095;
           </button>

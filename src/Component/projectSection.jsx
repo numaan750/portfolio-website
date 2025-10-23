@@ -1,119 +1,242 @@
 "use client";
 
-import Image from "next/image";
 import { motion } from "framer-motion";
-
-const projects = [
-  {
-    title: "Trust Property Website",
-    description:
-      "A fully responsive trust property website built using Next.js and styled with Tailwind CSS, ensuring fast performance, clean design, and seamless user experience across all devices.",
-    Image: "",
-    link: "https://trust-property.vercel.app/",
-  },
-  {
-    title: "E-commerce App",
-    description:
-      "A full-stack shopping app with cart, checkout, and admin features built using MERN stack.",
-    image: "/images/project2.jpg",
-    link: "https://your-ecommerce-site.com",
-  },
-  {
-    title: "Landing Page Design",
-    description:
-      "A modern landing page design with UI/UX focused layout, animations and responsiveness.",
-    image: "/images/project3.jpg",
-    link: "https://your-landing-page.com",
-  },
-  {
-    title: "Blog Platform",
-    description:
-      "A modern blogging platform with rich text editor, tags, and social sharing.",
-    image: "/images/project4.jpg",
-    link: "https://your-blog-platform.com",
-  },
-  {
-    title: "Task Manager App",
-    description:
-      "A productivity app with task tracking, deadlines, and reminders.",
-    image: "/images/project5.jpg",
-    link: "https://your-task-app.com",
-  },
-  {
-    title: "Social Media Dashboard",
-    description:
-      "Dashboard showing analytics and statistics for multiple social media accounts.",
-    image: "/images/project6.jpg",
-    link: "https://your-dashboard.com",
-  },
-  {
-    title: "Fitness Tracker App",
-    description: "An app to track workouts, nutrition, and progress over time.",
-    image: "/images/project7.jpg",
-    link: "https://your-fitness-app.com",
-  },
-];
+import Image from "next/image";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 60 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.5, ease: "easeOut" },
-  },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
 
 export default function ProjectSection() {
   return (
-    <section id="projects" className="py-20 bg-gray-900 text-white">
+    <section id="projects" className="bg-gray-900 text-white py-20 sm:py-24">
       <div className="Mycontainer">
-        {/* Heading */}
+        {/* Section Header */}
         <motion.div
-          className="text-center mb-12 px-4 sm:px-6 lg:px-0"
+          className="text-center space-y-4 mb-12 px-4"
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.4 }}
           variants={fadeUp}
         >
-          <h2 className="text-3xl sm:text-4xl font-bold mb-4">Projects</h2>
+          <span className="inline-block px-4 py-1.5 text-xs sm:text-sm font-semibold tracking-widest text-indigo-400 uppercase bg-gray-800 rounded-full">
+            My Work
+          </span>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold leading-snug">
+            Featured Projects
+          </h2>
           <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
-            Here are a few projects I've worked on with full visuals and
-            external links:
+            A selection of projects that highlight my skills in web development,
+            UI/UX design, and full-stack integration.
           </p>
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 px-4 sm:px-0">
-          {projects.map((project, index) => (
-            <motion.a
-              key={index}
-              href={project.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gray-800 rounded-lg overflow-hidden shadow-md hover:shadow-xl transition duration-300 flex flex-col"
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, amount: 0.3 }}
-              variants={fadeUp}
-            >
-              <div className="relative w-full h-48 sm:h-52 md:h-56">
-                <Image
-                  src={project.image}
-                  alt={project.title}
-                  fill
-                  className="object-cover"
-                />
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-0">
+          {/* Project 1 */}
+          <motion.a
+            href="https://trust-property.vercel.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUp}
+          >
+            <div className="relative w-full h-56 sm:h-60">
+              <Image
+                src="/images/trust-property.jpg"
+                alt="Trust Property Website"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <span className="text-sm sm:text-base bg-indigo-600 px-4 py-2 rounded-lg font-semibold">
+                  View Project
+                </span>
               </div>
-              <div className="p-4 sm:p-5 flex flex-col flex-1 justify-between">
-                <h3 className="text-lg sm:text-xl font-semibold mb-2">
-                  {project.title}
-                </h3>
-                <p className="text-gray-400 text-sm sm:text-base flex-1">
-                  {project.description}
-                </p>
+            </div>
+            <div className="p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 group-hover:text-indigo-400 transition-colors duration-300">
+                Trust Property Website
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base">
+                A responsive real estate site built with Next.js & Tailwind CSS for seamless user experience.
+              </p>
+            </div>
+          </motion.a>
+
+          {/* Project 2 */}
+          <motion.a
+            href="https://your-ecommerce-site.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUp}
+          >
+            <div className="relative w-full h-56 sm:h-60">
+              <Image
+                src="/images/ecommerce-app.jpg"
+                alt="E-Commerce App"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <span className="text-sm sm:text-base bg-indigo-600 px-4 py-2 rounded-lg font-semibold">
+                  View Project
+                </span>
               </div>
-            </motion.a>
-          ))}
+            </div>
+            <div className="p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 group-hover:text-indigo-400 transition-colors duration-300">
+                E-Commerce App
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base">
+                A full-stack shopping app with cart, checkout, and admin dashboard built using MERN stack.
+              </p>
+            </div>
+          </motion.a>
+
+          {/* Project 3 */}
+          <motion.a
+            href="https://your-landing-page.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUp}
+          >
+            <div className="relative w-full h-56 sm:h-60">
+              <Image
+                src="/images/landing-page.jpg"
+                alt="Landing Page Design"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <span className="text-sm sm:text-base bg-indigo-600 px-4 py-2 rounded-lg font-semibold">
+                  View Project
+                </span>
+              </div>
+            </div>
+            <div className="p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 group-hover:text-indigo-400 transition-colors duration-300">
+                Landing Page Design
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base">
+                A sleek, conversion-focused landing page with smooth animations and a responsive layout.
+              </p>
+            </div>
+          </motion.a>
+
+          {/* Project 4 */}
+          <motion.a
+            href="https://your-portfolio.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUp}
+          >
+            <div className="relative w-full h-56 sm:h-60">
+              <Image
+                src="/images/portfolio.jpg"
+                alt="Portfolio Website"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <span className="text-sm sm:text-base bg-indigo-600 px-4 py-2 rounded-lg font-semibold">
+                  View Project
+                </span>
+              </div>
+            </div>
+            <div className="p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 group-hover:text-indigo-400 transition-colors duration-300">
+                Portfolio Website
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base">
+                A personal portfolio built with Next.js and Framer Motion to showcase creativity and projects.
+              </p>
+            </div>
+          </motion.a>
+
+          {/* Project 5 */}
+          <motion.a
+            href="https://your-task-app.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUp}
+          >
+            <div className="relative w-full h-56 sm:h-60">
+              <Image
+                src="/images/task-manager.jpg"
+                alt="Task Manager App"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <span className="text-sm sm:text-base bg-indigo-600 px-4 py-2 rounded-lg font-semibold">
+                  View Project
+                </span>
+              </div>
+            </div>
+            <div className="p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 group-hover:text-indigo-400 transition-colors duration-300">
+                Task Manager App
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base">
+                A minimal productivity tool to manage daily tasks and deadlines efficiently.
+              </p>
+            </div>
+          </motion.a>
+
+          {/* Project 6 */}
+          <motion.a
+            href="https://your-dashboard.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group relative bg-gray-800 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.3 }}
+            variants={fadeUp}
+          >
+            <div className="relative w-full h-56 sm:h-60">
+              <Image
+                src="/images/dashboard.jpg"
+                alt="Social Media Dashboard"
+                fill
+                className="object-cover group-hover:scale-110 transition-transform duration-500"
+              />
+              <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                <span className="text-sm sm:text-base bg-indigo-600 px-4 py-2 rounded-lg font-semibold">
+                  View Project
+                </span>
+              </div>
+            </div>
+            <div className="p-5 sm:p-6">
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 group-hover:text-indigo-400 transition-colors duration-300">
+                Social Media Dashboard
+              </h3>
+              <p className="text-gray-400 text-sm sm:text-base">
+                An analytics dashboard to monitor insights from multiple social media platforms.
+              </p>
+            </div>
+          </motion.a>
         </div>
       </div>
     </section>

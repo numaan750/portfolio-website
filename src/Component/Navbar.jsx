@@ -27,8 +27,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 left-0 w-full z-50 bg-transparent">
-      <div className="Mycontainer py-4 flex justify-between items-center px-4 sm:px-6">
-        {/* Logo */}
+      <div className="Mycontainer py-4 flex justify-between items-center ">
         <motion.h1
           className="text-2xl font-bold text-white"
           initial={{ opacity: 0, y: -20 }}
@@ -38,7 +37,6 @@ const Navbar = () => {
           WebCrafted
         </motion.h1>
 
-        {/* Desktop Menu */}
         <nav className="hidden md:flex space-x-6 text-sm md:text-base">
           {menuItems.map((item, idx) => (
             <motion.a
@@ -54,7 +52,6 @@ const Navbar = () => {
           ))}
         </nav>
 
-        {/* Mobile Toggle */}
         <div className="md:hidden">
           <button
             onClick={toggleMenu}
@@ -65,7 +62,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile Overlay Menu */}
       <AnimatePresence>
         {isClient && isOpen && (
           <motion.div
