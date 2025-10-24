@@ -59,7 +59,7 @@ export default function AboutSection() {
               <div className="relative w-full h-[280px] sm:h-[320px] md:h-[380px] lg:h-[420px] xl:h-[460px] rounded-xl overflow-hidden shadow-lg">
                 <Image
                   src="/about-img.jpeg"
-                  alt="Profile Photo"
+                  alt="Profile"
                   fill
                   priority
                   className="object-cover object-top"
