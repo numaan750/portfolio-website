@@ -62,12 +62,11 @@ export default function ResumeSection() {
                 <div className="absolute -left-[1.7rem] top-1 w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center font-bold text-white shadow-md">
                   01
                 </div>
-                <p className="text-sm text-gray-400 mb-1">2021–2022</p>
-                <h4 className="text-lg sm:text-xl font-semibold text-white">SEO</h4>
+                <p className="text-sm text-gray-400 mb-1">08–2025</p>
+                <h4 className="text-lg sm:text-xl font-semibold text-white">MERN Stack Developer</h4>
                 <p className="text-indigo-400 text-sm font-medium mb-2">DevsRank</p>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                  Performed keyword research, optimized web pages, and increased
-                  website traffic and rankings for multiple clients.
+                  Performed full-stack development using the MERN stack, optimized web applications for performance and SEO, and contributed to increasing client website traffic and search rankings.
                 </p>
               </div>
 
@@ -76,12 +75,11 @@ export default function ResumeSection() {
                 <div className="absolute -left-[1.7rem] top-1 w-10 h-10 bg-indigo-500 rounded-full flex items-center justify-center font-bold text-white shadow-md">
                   02
                 </div>
-                <p className="text-sm text-gray-400 mb-1">2022–Now</p>
-                <h4 className="text-lg sm:text-xl font-semibold text-white">UI / UX Designer</h4>
+                <p className="text-sm text-gray-400 mb-1">2021–Now</p>
+                <h4 className="text-lg sm:text-xl font-semibold text-white">SEO</h4>
                 <p className="text-indigo-400 text-sm font-medium mb-2">Freelancing</p>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                  Designing user-friendly websites and mobile apps with intuitive
-                  wireframes, prototypes, and responsive UI systems.
+                  Designed and optimized user-friendly websites with responsive UI and SEO-focused architecture to improve visibility and user engagement.
                 </p>
               </div>
 
