@@ -111,7 +111,7 @@ const HeroSection = () => {
             >
               <div className="bg-transparent shadow-2xl rounded-full p-6 w-[550px] h-[550px] flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-500">
                 <Image
-                  src="/heroright-img.png"
+                  src="/hero-img.jpeg"
                   alt="Numaan Ali"
                   width={500}
                   height={500}
