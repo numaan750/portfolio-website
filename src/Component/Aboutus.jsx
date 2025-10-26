@@ -46,9 +46,9 @@ export default function AboutSection() {
               About Me
             </p>
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold leading-snug sm:leading-tight text-white">
-              Passionate Front-End Developer
+              Full-Stack MERN Developer
               <br className="hidden md:inline" />
-              Crafting Meaningful Web Experiences
+              Turning Ideas into Interactive Web Apps
             </h2>
           </motion.div>
 
@@ -78,21 +78,21 @@ export default function AboutSection() {
             >
               <p className="text-gray-300 text-sm sm:text-base md:text-2xl leading-relaxed">
                 With a deep-rooted passion for design and technology, I
-                specialize in creating responsive, visually compelling
-                interfaces that not only engage users but also deliver seamless
-                functionality.
+                specialize in building responsive and scalable web applications
+                using the MERN stack, delivering seamless performance and
+                engaging user experiences.
               </p>
 
               <p className="text-gray-300 text-sm sm:text-base md:text-2xl leading-relaxed">
-                From wireframes to deployment, I bring a detail-driven approach
-                to front-end development, ensuring every project reflects both
-                modern aesthetics and optimal user experience.
+                From planning to deployment, I bring a detail-driven approach to
+                full-stack MERN development, ensuring each project blends modern
+                design with robust functionality and seamless user experience.
               </p>
 
               <p className="text-gray-300 text-sm sm:text-base md:text-2xl leading-relaxed">
-                I stay continuously updated with evolving trends and
-                technologies, ensuring each website I build is fast, scalable,
-                and future-ready.
+                I stay continuously updated with evolving web technologies,
+                ensuring every MERN application I build is fast, scalable, and
+                future-ready.
               </p>
             </motion.div>
           </div>

@@ -33,8 +33,8 @@ export default function ServicesSection() {
           transition={{ delay: 0.3, duration: 0.5 }}
           viewport={{ once: false }}
         >
-          I create elegant, user-focused, and high-performing websites and apps —
-          ensuring your brand stands out beautifully across all devices.
+          I create elegant, user-focused, and high-performing websites and apps
+          — ensuring your brand stands out beautifully across all devices.
         </motion.p>
 
         {/* ===== Services Grid (Manual Cards) ===== */}
@@ -48,11 +48,11 @@ export default function ServicesSection() {
             viewport={{ once: false }}
           >
             <h3 className="text-lg sm:text-xl font-semibold mb-2 text-indigo-400">
-              ✅ Responsive Web Design
+              ✅ Responsive MERN Stack Web Development
             </h3>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              Creating clean, responsive web designs that look great and function
-              flawlessly on all screen sizes.
+              Creating full-stack MERN solutions with sleek, responsive designs
+              and smooth functionality on every screen size.
             </p>
           </motion.div>
 
@@ -65,11 +65,11 @@ export default function ServicesSection() {
             viewport={{ once: false }}
           >
             <h3 className="text-lg sm:text-xl font-semibold mb-2 text-indigo-400">
-              ✅ Mobile App Design
+              ✅ Creative UI/UX Interface Design
             </h3>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              Designing user-friendly and engaging mobile app interfaces optimized
-              for both iOS and Android platforms.
+              Designing user-friendly and engaging mobile app interfaces
+              optimized for both iOS and Android platforms.
             </p>
           </motion.div>
 
@@ -85,8 +85,8 @@ export default function ServicesSection() {
               ✅ Website Optimization
             </h3>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              Improving performance, speed, SEO, and overall user experience for
-              better conversions.
+              Creating user-friendly mobile experiences optimized for iOS and
+              Android, guided by modern UI/UX principles.
             </p>
           </motion.div>
 
@@ -99,11 +99,11 @@ export default function ServicesSection() {
             viewport={{ once: false }}
           >
             <h3 className="text-lg sm:text-xl font-semibold mb-2 text-indigo-400">
-              ✅ Front-End Development
+              ✅ Front-End Development with React & Next.js
             </h3>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              Building high-performance, responsive, and accessible websites using
-              HTML, CSS, JavaScript, and React.js.
+              Building high-performance, responsive, and accessible web
+              applications using React.js and Next.js.
             </p>
           </motion.div>
 
@@ -119,8 +119,8 @@ export default function ServicesSection() {
               ✅ SEO Optimization
             </h3>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              Optimizing websites for higher search engine rankings and increased
-              organic traffic through proven SEO techniques.
+              Optimizing websites for higher search engine rankings and
+              increased organic traffic through proven SEO techniques.
             </p>
           </motion.div>
 
@@ -136,8 +136,8 @@ export default function ServicesSection() {
               ✅ Digital Marketing
             </h3>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              Planning and executing digital marketing strategies, including content
-              creation, branding, and ad campaigns.
+              Planning and executing digital marketing strategies, including
+              content creation, branding, and ad campaigns.
             </p>
           </motion.div>
 
@@ -150,11 +150,11 @@ export default function ServicesSection() {
             viewport={{ once: false }}
           >
             <h3 className="text-lg sm:text-xl font-semibold mb-2 text-indigo-400">
-              ✅ Next.js Development
+              ✅ Secure API Integration with Next.js
             </h3>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              Building fast, SEO-optimized, and scalable full-stack apps using
-              Next.js and server-side rendering.
+              Building fast, scalable full-stack applications with Next.js, API
+              integration, and server-side rendering.
             </p>
           </motion.div>
 
@@ -170,8 +170,8 @@ export default function ServicesSection() {
               ✅ GitHub & Vercel Deployment
             </h3>
             <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-              Managing version control with GitHub and deploying high-performance
-              sites using Vercel’s cloud infrastructure.
+              Managing version control with GitHub and deploying
+              high-performance sites using Vercel’s cloud infrastructure.
             </p>
           </motion.div>
         </div>

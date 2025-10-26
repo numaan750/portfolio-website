@@ -20,12 +20,15 @@ const fadeUp = {
 
 const SkillsSection = () => {
   const skills = [
-    "HTML / CSS / JavaScript",
-    "React.js / Bootstrap",
-    "Tailwind CSS / WordPress",
-    "Figma / SEO",
-    "Git / GitHub / Vercel",
-    "Next.js / Responsive Design",
+    "React.js & Next.js",
+    "MongoDB",
+    "Express.js & Node.js",
+    "RESTful APIs/Authentication",
+    "Tailwind",
+    "WordPress",
+    "GitHub / Vercel",
+    "Figma / canva",
+    "SEO Optimization",
   ];
 
   return (

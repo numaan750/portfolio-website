@@ -89,10 +89,10 @@ export default function ResumeSection() {
                   03
                 </div>
                 <p className="text-sm text-gray-400 mb-1">2023–Now</p>
-                <h4 className="text-lg sm:text-xl font-semibold text-white">React.js Developer</h4>
+                <h4 className="text-lg sm:text-xl font-semibold text-white">React.js & Next.js Developer</h4>
                 <p className="text-indigo-400 text-sm font-medium mb-2">Freelancer</p>
                 <p className="text-gray-400 text-sm sm:text-base leading-relaxed">
-                  Developing scalable, high-performance React applications with
+                  Developing scalable, high-performance React & Next applications with
                   reusable components and modern UI best practices.
                 </p>
               </div>
