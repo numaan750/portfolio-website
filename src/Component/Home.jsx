@@ -109,7 +109,7 @@ const HeroSection = () => {
               }}
               className="relative z-10 flex justify-center items-center"
             >
-              <div className="bg-transparent shadow-2xl rounded-full p-6 w-[550px] h-[550px] flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-500">
+              <div className="bg-transparent shadow-2xl rounded-full p-6 w-[400px] h-[400px] flex justify-center items-center overflow-hidden hover:scale-105 transition-transform duration-500">
                 <Image
                   src="/hero-img.jpeg"
                   alt="Numaan Ali"
