@@ -111,23 +111,23 @@ export default function ContactSection() {
             </h3>
             <div className="flex flex-wrap gap-4 text-2xl">
               <a
-                href="https://facebook.com/yourprofile"
+                href="https://www.facebook.com/numaan.ali.1426"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-gray-900 hover:bg-teal-500 transition text-gray-400 hover:text-white shadow-md"
               >
                 <FaFacebookF />
               </a>
-              <a
+              {/* <a
                 href="https://twitter.com/yourprofile"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-gray-900 hover:bg-teal-500 transition text-gray-400 hover:text-white shadow-md"
               >
                 <FaTwitter />
-              </a>
+              </a> */}
               <a
-                href="https://linkedin.com/in/yourprofile"
+                href="https://www.linkedin.com/feed/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 rounded-full bg-gray-900 hover:bg-teal-500 transition text-gray-400 hover:text-white shadow-md"
